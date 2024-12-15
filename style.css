@@ -25,13 +25,13 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 3px gray;
 }
 
 .icons {
     display: flexbox;
     padding-inline: 2vw;
-    font-size: x-large;
+    font-size: xx-large;
     letter-spacing: 0.8ch;
 }
 
@@ -44,10 +44,10 @@ html, body {
 }
 
 .title {
-    padding-inline: 3vw;
+    padding-inline: 4vw;
     color: white;
     font-family: "Offside", sans-serif;
-    font-size: larger;
+    font-size: x-large;
     letter-spacing: 0.5ch;
 }
 
@@ -75,6 +75,7 @@ html, body {
     padding-inline: 3ch;
     color: white;
     font-family: "Offside", sans-serif;
+    text-shadow: 0px 0px 3px gray;
 }
 
 .footer a{
