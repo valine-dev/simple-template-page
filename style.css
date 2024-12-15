@@ -1,0 +1,86 @@
+@import url("https://chinese-fonts-cdn.deno.dev/packages/hwmct/dist/%E6%B1%87%E6%96%87%E6%98%8E%E6%9C%9D%E4%BD%93/result.css");
+@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css');
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flexbox;
+    border-radius: 0 0 15px 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 3px 64px 12px black ;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0px 0px 5px black;
+}
+
+.icons {
+    display: flexbox;
+    padding-inline: 2vw;
+    font-size: x-large;
+    letter-spacing: 0.8ch;
+}
+
+.icons a {
+    color: white;
+}
+
+.icons a:hover {
+    color: orange;
+}
+
+.title {
+    padding-inline: 3vw;
+    color: white;
+    font-family: "Offside", sans-serif;
+    font-size: larger;
+    letter-spacing: 0.5ch;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    min-width: 100%;
+    justify-content: space-between;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.textbox {
+    display: flexbox;
+    align-self: center;
+    text-shadow: #FFFFFF 5px 5px 4px, #FFFFFF -5px -5px 4px;
+    font-family:'Huiwen-mincho';
+    padding: 10px 50px 10px;
+    font-size: xx-large;
+}
+
+.footer {
+    display: flexbox;
+    backdrop-filter: blur(12px);
+    padding-inline: 3ch;
+    color: white;
+    font-family: "Offside", sans-serif;
+}
+
+.footer a{
+    text-decoration: underline;
+    color:white;
+}
+.footer a:hover {
+    color:orange;
+}

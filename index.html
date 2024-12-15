@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>...yet to come</title>
+    <style>
+        @import url(style.css);
+    </style>
+</head>
+
+<body>
+    <div class="container" id="bg" style="background-image: url(default.jpg);">
+        <div class="header">
+            <div class="navbar">
+                <div class="title"><p>VALINE0X</p></div>
+                <div class="icons">
+                    <a href="https://github.com/valine-dev"><i class="devicon-github-original"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="textbox">
+        <p id="hitokoto">
+            <a href="#" id="hitokoto_text"></a>
+        </p>
+        </div>
+        <div class="footer">
+            <p>Under construction 🚧 Built with <a href="https://hitokoto.cn/">Hitokoto</a> & <a href="http://pic.re/">Anime API</a></p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        // API USEAGE
+        fetch("https://pic.re/image.json?in=touhou", {
+            method: "GET",
+        }).then(res => res.json())
+        .then(data => {
+            console.log(data);
+            const box = document.querySelector('#bg')
+            box.style = `background-image: url("https://${data.file_url}")`
+        })
+
+        fetch('https://v1.hitokoto.cn?c=a&c=b')
+          .then(response => response.json())
+          .then(data => {
+            const hitokoto = document.querySelector('#hitokoto_text')
+            fw = data.from_who || ""
+            if (fw != "") {fw = "\n" + fw}
+            hitokoto.innerText = `${data.hitokoto}${fw}\n《${data.from}》`
+          })
+          .catch(console.error)
+      </script>
+
+</body>
+
+<html>
